@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Catalog</title>
+  <script>
+    function borrowBook(title) {
+      alert("You have borrowed: " + title);
+    }
+  </script>
+</head>
+<body>
+  <h1>Book Catalog</h1>
+  <ul>
+    <li>
+      <strong>1984</strong> by George Orwell - Available
+      <button onclick="borrowBook('1984')">Borrow</button>
+    </li>
+    <li>
+      <strong>To Kill a Mockingbird</strong> by Harper Lee - Borrowed
+      <button disabled>Not Available</button>
+    </li>
+    <li>
+      <strong>The Great Gatsby</strong> by F. Scott Fitzgerald - Available
+      <button onclick="borrowBook('The Great Gatsby')">Borrow</button>
+    </li>
+  </ul>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

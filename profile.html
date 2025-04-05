@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <script>
+    function returnBook(bookTitle) {
+      let item = document.getElementById("borrowed").innerHTML = "<p>No books currently borrowed.</p>";
+      alert("You have returned: " + bookTitle);
+    }
+  </script>
+</head>
+<body>
+  <h1>Your Profile</h1>
+  <p><strong>Name:</strong> John Doe</p>
+  <div id="borrowed">
+    <p><strong>Borrowed Books:</strong></p>
+    <ul>
+      <li>
+        The Catcher in the Rye - Due: April 10, 2025
+        <button onclick="returnBook('The Catcher in the Rye')">Return</button>
+      </li>
+    </ul>
+  </div>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
